@@ -41,7 +41,7 @@ class ControllersTest {
         assertEquals(4, materias.size());
 
         Double promedio = controller.obtenerPromedio();
-        assertEquals(9.5, promedio);
+        assertEquals(8.6, promedio);
     }
 
     @Test

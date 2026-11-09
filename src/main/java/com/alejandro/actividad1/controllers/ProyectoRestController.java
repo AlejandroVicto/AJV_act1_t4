@@ -11,7 +11,8 @@ public class ProyectoRestController {
 
     /**
      * Endpoint a) Regresa el nombre del proyecto, iniciales y datos del servidor
-     * para identificar fácilmente de quién es la instancia corriendo en el servidor.
+     * para identificar fácilmente de quién es la instancia corriendo en el
+     * servidor.
      */
     @GetMapping("/api/proyecto")
     public Map<String, Object> infoProyecto() {
@@ -34,12 +35,4 @@ public class ProyectoRestController {
         return "¡Hola! Servidor de Alejandro (AJV_act1_t4) corriendo exitosamente en Spring Boot.";
     }
 
-    /**
-     * Endpoint c) Regresa otro tipo de respuesta: Número entero (int).
-     */
-    @GetMapping("/api/version")
-    public int version() {
-        return 1;
-    }
 }
-
